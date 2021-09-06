@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "resource_core",
+  "version": "${version}",
+  "name": "Resource Core",
+  "description": "Making it easier to add content!",
+  "authors": [
+    "Flytre"
+  ],
+  "contact": {
+    "website": "https://www.flytre.net"
+  },
+  "license": "Custom License",
+  "icon": "assets/resource_core/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.flytre.resource_core.client.ResourceCoreClient"
+    ],
+    "main": [
+      "net.flytre.resource_core.ResourceCore"
+    ]
+  },
+  "mixins": [
+    "resource_core.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric": "*",
+    "minecraft": "1.17.*"
+  }
+}
